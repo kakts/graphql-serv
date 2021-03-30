@@ -1,11 +1,12 @@
-const testCore = require('../index');
+const {setup, teardown, testApiClient} = require('../index')
 
 describe("Query.user", () => {
+
     before(() => {
-        testCore.setup()
+        setup()
     })
 
     it("test", () => {
-        return true
+        
     })
 })
