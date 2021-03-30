@@ -15,5 +15,6 @@ describe('userService.getRandomName', () => {
         }
 
         assert.ok(result)
+        assert.equal(typeof result, 'string')
     })
 })
