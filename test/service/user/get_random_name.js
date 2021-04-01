@@ -6,7 +6,6 @@ const nock = require('nock')
 
 const testCore = require('../../index')
 const {getRandomName} = require("../../../lib/service/user")
-const { assertScalarType } = require("graphql")
 
 describe('userService.getRandomName', () => {
     const resultName = 'testName'
