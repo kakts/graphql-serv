@@ -70,10 +70,8 @@ describe("Query.user", () => {
                 })
 
         } catch (e) {
-            console.error("----errorr", e)
             err = e
         } finally {
-            console.log("---------2", result, err)
             assert.ok(!err)
             assert(result)
             assert(result.data)
