@@ -15,11 +15,6 @@ describe("Query.users", () => {
 
     it("test idが1のユーザーのid, name, email, postsが取得できる", async () => {
         const userId = 1
-        const user = Users.find((data) => {
-            if (data.id === userId) {
-                return data
-            }
-        });
         let result, err
         try {
             result = await client
